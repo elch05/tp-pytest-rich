@@ -1,9 +1,9 @@
-# TP Colaborativo — pytest + Rich
+# TP Colaborativo - pytest + Rich
 
 Material de la presentación del TP Colaborativo de **Programación 1** (Ciencia de Datos, ISTEA).
 
-Tema: dos librerías de terceros de Python — **pytest** (tests automatizados) y **Rich**
-(salida con formato en la terminal) — más una herramienta de IA (Claude Code).
+Tema: dos librerías de terceros de Python, **pytest** (tests automatizados) y **Rich**
+(salida con formato en la terminal), más una herramienta de IA (Claude Code).
 
 Todo el código de las diapositivas está acá, y las salidas que se ven en la
 presentación son las salidas reales de ejecutar estos archivos.
@@ -27,9 +27,10 @@ source venv/bin/activate     (Linux / Mac)
 
 pip install -r requirements.txt
 
-pytest -v            # corre los tests que pasan
+pytest -v            # corre todos los tests: 7 pasan y 1 falla A PROPOSITO
+                     # (el de falla/, que tiene el bug del ejemplo)
 cd falla
-pytest               # muestra el test que falla y el reporte detallado
+pytest               # muestra solo ese test que falla, con el reporte detallado
 cd ..
 python demo_rich.py  # demo de Rich
 ```
